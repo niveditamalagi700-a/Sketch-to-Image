@@ -14,7 +14,7 @@ class Settings(BaseSettings):
     FLUX_API_BASE_URL: str = "https://api.bfl.ml/v1"
     FLUX_MODEL: str = "flux.2-dev"
     FLUX_MODE: str = "reference"  # "reference" or "canny"
-    ALLOWED_ORIGINS: str = "http://localhost:5173,http://127.0.0.1:5173"
+    ALLOWED_ORIGINS: str = "http://localhost:5173,http://127.0.0.1:5173,https://sketch-to-image-two.vercel.app"
     MAX_UPLOAD_MB: int = 8
     REQUEST_TIMEOUT_S: int = 90
     RATE_LIMIT_PER_MINUTE: int = 10
