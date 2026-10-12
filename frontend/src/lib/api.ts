@@ -53,7 +53,7 @@ export class ApiError extends Error {
   }
 }
 
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000';
+const API_BASE_URL = import.meta.env.VITE_API_URL || 'https://sketch-to-image-o2ee.onrender.com';
 
 async function parseResponse<T>(res: Response): Promise<T> {
   const contentType = res.headers.get('content-type') || '';
